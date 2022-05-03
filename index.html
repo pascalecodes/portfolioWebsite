@@ -207,6 +207,10 @@
 						<div class="col-12">
 							<form method="post" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field" action="#">
 								<input type="hidden" name="subject" value="Inquiry from PascaleDev.com" />
+								<!-- <div class="hidden"><label class="'hidden">
+									Don’t fill this out if you’re human: <input name="bot-field" />
+								  </label>
+							  	</div> -->
 								<div class="row">
 									<div class="col-6 col-12-small">
 										<input type="text" name="name" id="name" placeholder="Name" />
@@ -214,18 +218,14 @@
 									<div class="col-6 col-12-small">
 										<input type="text" name="email" id="email" placeholder="Email" />
 									</div>
-									<p class="hidden">
-										<label>
-										  Don’t fill this out if you’re human: <input name="bot-field" />
-										</label>
-									</p>
+									
 									<div class="col-12">
 										<input type="text" name="subject" id="subject" placeholder="Subject" />
 									</div>
 									<div class="col-12">
 										<textarea name="message" id="message" placeholder="Message"></textarea>
 									</div>
-									<div data-netlify-recaptcha="true"></div>
+									<div class="col-12" data-netlify-recaptcha="true"></div>
 									<div class="col-12">
 										<ul class="actions">
 											<li><input type="submit" value="Send Message" /></li>
