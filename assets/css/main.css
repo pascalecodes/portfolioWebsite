@@ -1142,6 +1142,9 @@ input, select, textarea {
 				.row > .col-6-medium {
 					width: 50%;
 				}
+				.row > .col-6b-medium {
+					width: 70%;
+				}
 
 				.row > .off-6-medium {
 					margin-left: 50%;
