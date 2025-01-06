@@ -255,7 +255,7 @@
 					</div>
 					<footer>
 						<ul id="copyright">
-							<li>Copyright &copy; PascaleDev 2022-{currentYear} All rights reserved.</li>
+							<li id="copyright-text"></li>
 						</ul>
 					</footer>
 				</div>
@@ -268,6 +268,10 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+		        const currentYear = new Date().getFullYear();
+		        document.getElementById('copyright-text').innerHTML = `Copyright &copy; PascaleDev 2022-${currentYear} All rights reserved.`;
+		    	</script>
 
 	</body>
 </html>
